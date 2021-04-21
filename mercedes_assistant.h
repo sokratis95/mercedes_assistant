@@ -23,6 +23,7 @@ public:
   // Returns 0 if command is recognized and -1 if it is not
   int user_intent_recognition(const std::string &user_command);
   void print_assistant_answer();
+  std::string get_assistant_answer() { return assistant_answer_;};
 };
 
 #endif /// MERCEDES_ASSISTANT_H
